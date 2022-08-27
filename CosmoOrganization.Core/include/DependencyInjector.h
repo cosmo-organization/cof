@@ -6,7 +6,7 @@
 #include <iostream>
 
 namespace CosmoOrganization {
-	class  DependencyInjector
+	class DependencyInjector
 	{
 		std::vector<Object*> Dependencies;
 		std::vector<int> Transients;

@@ -9,6 +9,7 @@
 #else
 #define COSMO_API __declspec(dllimport)
 #endif
+
 #else
 #if __cplusplus
 #define COSMO_API extern "C"
@@ -16,6 +17,7 @@
 #define COSMO_API
 #endif
 #endif
+
 
 
 #include "Object.h"

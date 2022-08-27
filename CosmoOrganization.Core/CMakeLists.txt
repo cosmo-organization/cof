@@ -1,6 +1,6 @@
 
 cmake_minimum_required(VERSION 3.10)
-
+project(CosmoOrganization.Core)
 include_directories("include")
 
 add_library("CosmoOrganization.Core" STATIC

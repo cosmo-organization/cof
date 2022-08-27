@@ -1,7 +1,7 @@
 #include "DependencyInjector.h"
 
 namespace CosmoOrganization {
-    void DependencyInjector::_AddService(Object* obj, const int ID)
+    void  DependencyInjector::_AddService(Object* obj, const int ID)
     {
         for (Object* comp : Dependencies) {
             if (comp->ObjectId == ID)return;
@@ -9,7 +9,7 @@ namespace CosmoOrganization {
         obj->ObjectId = ID;
         Dependencies.push_back(obj);
     }
-    void DependencyInjector::_AddTransient(const int ID)
+    void  DependencyInjector::_AddTransient(const int ID)
     {
         for (const int id : Transients) {
             if (id == ID)return;
@@ -19,7 +19,7 @@ namespace CosmoOrganization {
         }
         Transients.push_back(ID);
     }
-    void DependencyInjector::_AddSingleton(Object* obj, const int ID)
+    void  DependencyInjector::_AddSingleton(Object* obj, const int ID)
     {
         for (const int id : Transients) {
             if (id == ID)return;
