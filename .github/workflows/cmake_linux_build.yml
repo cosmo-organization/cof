@@ -17,9 +17,7 @@ jobs:
       run: cmake .
     - name: Building project
       run: make all
-    - name: going to test folder
-      run: cd test
-    - name: Checking if we are in test folder or not
-      run: pwd
-    - name: run app
-      run: ./test
+    - name: check all directory files and folder
+      run: ls
+    - name: run test
+      run: "./test/test"
