@@ -17,7 +17,9 @@ jobs:
       run: mkdir build
     - name: going to build directory
       run: cd build
-    - name: building library and testapp
-      run: cmake ../ && cmake --build .
+    - name: Generating project with cmake
+      run: cmake ..
+    - name: Building project
+      run: make all
     - name: testing app
       run: cd test && ./test
