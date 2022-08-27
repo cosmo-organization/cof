@@ -13,13 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: build_directory
-      run: mkdir build
-    - name: going to build directory
-      run: cd build
     - name: Generating project with cmake
-      run: cmake ..
+      run: cmake .
     - name: Building project
       run: make all
-    - name: testing app
-      run: cd test && ./test
+    - name: going to test folder
+      run: cd test
+    - name: Checking if we are in test folder or not
+      run: pwd
+    - name: run app
+      run: ./test
