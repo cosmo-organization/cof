@@ -1,5 +1,3 @@
-extern "C" {
-	int __cdecl func() {
-		return 440;
-	}
+int func(){
+	return 0;
 }
