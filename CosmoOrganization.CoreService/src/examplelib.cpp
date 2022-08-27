@@ -2,4 +2,4 @@ int func(){
 	return 0;
 }
 
-extern "C" void test(){}
+extern "C"{ void test(){}}
