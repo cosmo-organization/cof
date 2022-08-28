@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
 project(test)
-include_directories("../CosmoOrganization.Core/include")
+include_directories("../CosmoOrganization.Core/include" "../CosmoOrganization.CoreService/include" "." "include/")
 add_executable(test "corelibtest.cpp")
 target_link_libraries(test CosmoOrganization.CoreService CosmoOrganization.Core)

@@ -3,7 +3,7 @@
 
 namespace CosmoOrganization{
 	PlatformService::PlatformService(Dependency* dep){}
-	void __cdecl PlatformService::greet(){
+	void  PlatformService::greet(){
 		std::cout<<"Hello World!"<<std::endl;
 	}
 }
