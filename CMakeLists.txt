@@ -4,4 +4,6 @@ project(cof)
 
 add_subdirectory("CosmoOrganization.Core")
 add_subdirectory("CosmoOrganization.CoreService")
+add_subdirectory("CosmoOrganization.PluginService")
 add_subdirectory("test")
+add_subdirectory("plugins")
